@@ -1,6 +1,6 @@
 # grindist
 
-Describe your project here.
+Particle size analysis application aimed at the home barista.
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
@@ -42,7 +42,7 @@ Describe your project here.
 
   <p align="center">
     Particle size analysis machinery is very expensive, FOSS is not.
-    Coffee grinder scales are (mostly) imprecise. Statics isn't (well it is, but y'know).
+    Coffee grinder scales are (mostly) imprecise. Statistics isn't (well it is, but y'know).
     Feed `[grindist](https://github.com/gebimble/grindist)` a photo of your grounds and see how things shake out.
     <br />
     <a href="https://github.com/gebimble/grindist"><strong>Explore the docs »</strong></a>
@@ -85,11 +85,19 @@ Describe your project here.
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+Coffee grinders are beautiful things, but there aren't many out there
+that you could say are "objective" in terms of how they represent their grind size,
+and grind size is certainly no an easy read-across from one grinder to another.
+
+Grindist gives you access to something close to what you would otherwise
+only get from extremely expensive laboratory equipment;
+just take a photo of a grind sample against a plane background
+alongside a reference object of a known size, and let Grindist do the rest.
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `gebimble`, `grindist`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `grindist`, `project_description`
 
@@ -114,33 +122,21 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* [`rye`](https://rye.astral.sh/)
+
+It seems heavy handed, but trust me on this one.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/gebimble/grindist.git
    ```
-3. Install NPM packages
+1. Install dependencies and grindist
    ```sh
-   npm install
+   cd grindist
+   rye install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin gebimble/grindist
-   git remote -v # confirm the changes
-   ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -148,7 +144,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Fill this in later.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -159,10 +155,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Basic statistics
+    - [ ] Numbers
+    - [ ] Visualisation
+- [ ] Computer Vision
+    - [ ] Segmentation
+    - [ ] Recognition
+    - [ ] Scaling
 
 See the [open issues](https://github.com/gebimble/grindist/issues) for a full list of proposed features (and known issues).
 
@@ -206,7 +205,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Joe Beaver - joseph.beaver@gmail.com
 
 Project Link: [https://github.com/gebimble/grindist](https://github.com/gebimble/grindist)
 
